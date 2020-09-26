@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
@@ -52,11 +52,11 @@
 
 </head>
 
-<body>
-  <div id="container" q-class="show:isCtnShow">
-    <canvas id="anm-canvas" class="anm-canvas"></canvas>
-    <div class="left-col" q-class="show:isShow">
-      
+  <body>
+    <div id="container" q-class="show:isCtnShow">
+      <canvas id="anm-canvas" class="anm-canvas"></canvas>
+      <div class="left-col" q-class="show:isShow">
+        
 
 
 <div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
@@ -123,16 +123,15 @@
 	</header>		
 </div>
 
-    </div>
-    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
-      
-      
-      <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
+      </div>
+      <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+         
+        <!-- <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;"
         href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
         <img src="/img/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-      
-      
+       -->
+        
 <nav id="mobile-nav">
   	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
 	<div class="btnctn js-mobile-btnctn">
@@ -190,14 +189,18 @@
 	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
 </nav>
 
-      <div id="wrapper" class="body-wrap">
-        <div class="menu-l">
-          <div class="canvas-wrap">
-            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1"
-              class="anm-canvas"></canvas>
-          </div>
-          <div id="js-content" class="content-ll">
-            
+        <div id="wrapper" class="body-wrap">
+          <div class="menu-l">
+            <div class="canvas-wrap">
+              <canvas
+                data-colors="#eaeaea"
+                data-sectionHeight="100"
+                data-contentId="js-content"
+                id="myCanvas1"
+                class="anm-canvas"
+              ></canvas>
+            </div>
+            <div id="js-content" class="content-ll">
 
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -363,11 +366,10 @@
   
   
 
-
+</div>
           </div>
         </div>
-      </div>
-      <footer id="footer">
+        <footer id="footer">
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
@@ -397,8 +399,8 @@
   
 </footer>
 
-    </div>
-    <script>
+      </div>
+      <script>
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: true,
@@ -420,8 +422,7 @@
 
 <!--  -->
 
-
-    
+ 
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
     
@@ -520,7 +521,7 @@
   </div>
   
 </div>
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     <!-- Background of PhotoSwipe. 
@@ -586,32 +587,30 @@
     </div>
 
 </div>
-  </div>
+    </div>
 
-  
-  
+     
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
   POWERMODE.colorful = true; // make power mode colorful
   POWERMODE.shake = false; // turn off shake
   document.body.addEventListener('input', POWERMODE);
 </script>
-
-  
-  <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
-  
-  
-  
-  <script type="text/javascript" src="/lib/snow.js"></script>
-  <script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
-  <script>
-    snow.down();
-    $(window).resize(function() {
-      $("canvas").css("z-index","500").remove();
+ 
+    <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
+      
+    <script type="text/javascript" src="/lib/snow.js"></script>
+    <script
+      type="text/javascript"
+      src="/lib/jquery-2.1.4.min.js"
+    ></script>
+    <script>
       snow.down();
-    });
-  </script>
-  
-</body>
-
+      $(window).resize(function () {
+        $("canvas").css("z-index", "500").remove();
+        snow.down();
+      });
+    </script>
+    
+  </body>
 </html>
